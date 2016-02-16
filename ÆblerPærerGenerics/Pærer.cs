@@ -12,5 +12,10 @@ namespace ÆblerPærerGenerics
         public decimal Pris { get; set; }
         public decimal Lager { get; set; }
 
+        public decimal BeregnTotal()
+        {
+            return Pris*Lager;
+        }
+
     }
 }

@@ -11,6 +11,11 @@ namespace ÆblerPærerGenerics
         public string Navn { get; set; }
         public decimal Pris { get; set; }
         public int Lager { get; set; }
+
+        public decimal BeregnTotal()
+        {
+            return Pris * Lager;
+        }
     }
 
 }
