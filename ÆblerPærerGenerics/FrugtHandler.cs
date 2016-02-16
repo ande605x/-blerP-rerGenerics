@@ -14,7 +14,7 @@ namespace ÆblerPærerGenerics
             decimal sum = 0;
             foreach (var l in list)
             {
-                sum += (l.Pris * l.Lager);
+                sum += (l.BeregnTotal());
             }
 
             return sum;
@@ -25,7 +25,7 @@ namespace ÆblerPærerGenerics
             decimal sum = 0;
             foreach (var l in list)
             {
-                sum += (l.Pris * l.Lager);
+                sum += (l.BeregnTotal());
             }
 
             return sum;
