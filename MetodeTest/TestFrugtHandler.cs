@@ -15,7 +15,7 @@ namespace MetodeTest
             æbleBeholdning.Add(new Æbler() { Navn = "Ingrid Marie", Lager = 50, Pris = 20.0M });
             æbleBeholdning.Add(new Æbler() { Navn = "Cox Orange", Lager = 25, Pris = 10.0M });
 
-            Assert.AreEqual(1250,FrugtHandler.CalculateSumÆbler(æbleBeholdning));
+            Assert.AreEqual(1250,FrugtHandler.BeregnGenericSumDecimal(æbleBeholdning));
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace MetodeTest
         {
             var æbleBeholdning = new List<Æbler>();
             æbleBeholdning.Add(new Æbler() { Navn = "Ingrid Marie", Lager = 50, Pris = 20.0M });
-            Assert.AreEqual(1000, FrugtHandler.CalculateSumÆbler(æbleBeholdning));
+            Assert.AreEqual(1000, FrugtHandler.BeregnGenericSumDecimal(æbleBeholdning));
         }
 
 
@@ -31,7 +31,7 @@ namespace MetodeTest
         public void TestCalculateSumÆblerIngen()
         {
             var æbleBeholdning = new List<Æbler>();
-            Assert.AreEqual(0, FrugtHandler.CalculateSumÆbler(æbleBeholdning));
+            Assert.AreEqual(0, FrugtHandler.BeregnGenericSumDecimal(æbleBeholdning));
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace MetodeTest
             pærerBeholdning.Add(new Pærer() { Navn = "Conference", Lager = 10M, Pris = 5M });
             pærerBeholdning.Add(new Pærer() { Navn = "Concorde", Lager = 15, Pris = 10M });
 
-            Assert.AreEqual(200, FrugtHandler.CalculateSumPærer(pærerBeholdning));
+            Assert.AreEqual(200, FrugtHandler.BeregnGenericSumDecimal(pærerBeholdning));
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace MetodeTest
             var pærerBeholdning = new List<Pærer>();
             pærerBeholdning.Add(new Pærer() { Navn = "Conference", Lager = 10M, Pris = 5M });
 
-            Assert.AreEqual(50, FrugtHandler.CalculateSumPærer(pærerBeholdning));
+            Assert.AreEqual(50, FrugtHandler.BeregnGenericSumDecimal(pærerBeholdning));
         }
 
 
@@ -59,7 +59,7 @@ namespace MetodeTest
         {
             var pærerBeholdning = new List<Pærer>();
 
-            Assert.AreEqual(0, FrugtHandler.CalculateSumPærer(pærerBeholdning));
+            Assert.AreEqual(0, FrugtHandler.BeregnGenericSumDecimal(pærerBeholdning));
         }
 
     }
