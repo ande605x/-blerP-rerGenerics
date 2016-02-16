@@ -29,10 +29,10 @@ namespace ÆblerPærerGenerics
             pærerBeholdning.Add(new Pærer() { Navn = "Tongre", Lager = 7M, Pris = 21M });
 
 
-            decimal værdiTotalÆbler = FrugtHandler.CalculateSumÆbler(æbleBeholdning);
+            decimal værdiTotalÆbler = FrugtHandler.BeregnGenericSumDecimal(æbleBeholdning);
             Console.WriteLine("Så meget er æblebeholdningen værd : " + værdiTotalÆbler );
 
-            decimal værdiTotalPærer = FrugtHandler.CalculateSumPærer(pærerBeholdning);
+            decimal værdiTotalPærer = FrugtHandler.BeregnGenericSumDecimal(pærerBeholdning);
             Console.WriteLine("Så meget er pærerbeholdningen værd: " + værdiTotalPærer);
 
 

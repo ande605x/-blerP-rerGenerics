@@ -22,26 +22,26 @@ namespace ÆblerPærerGenerics
         }
 
 
-        public static decimal CalculateSumÆbler(List<Æbler> list)
-        {
-            decimal sum = 0;
-            foreach (var l in list)
-            {
-                sum += (l.BeregnTotal());
-            }
+        //public static decimal CalculateSumÆbler(List<Æbler> list)
+        //{
+        //    decimal sum = 0;
+        //    foreach (var l in list)
+        //    {
+        //        sum += (l.BeregnTotal());
+        //    }
 
-            return sum;
-        }
+        //    return sum;
+        //}
 
-        public static decimal CalculateSumPærer(List<Pærer> list)
-        {
-            decimal sum = 0;
-            foreach (var l in list)
-            {
-                sum += (l.BeregnTotal());
-            }
+        //public static decimal CalculateSumPærer(List<Pærer> list)
+        //{
+        //    decimal sum = 0;
+        //    foreach (var l in list)
+        //    {
+        //        sum += (l.BeregnTotal());
+        //    }
 
-            return sum;
-        }
+        //    return sum;
+        //}
     }
 }
