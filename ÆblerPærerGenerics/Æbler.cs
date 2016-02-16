@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ÆblerPærerGenerics
 {
-    public class Æbler
+    public class Æbler:IBeregnDecimal
     {
         public string Navn { get; set; }
         public decimal Pris { get; set; }
