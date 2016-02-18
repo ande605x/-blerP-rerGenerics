@@ -22,7 +22,7 @@ namespace ÆblerPærerGenerics
         }
 
 
-        //public static decimal CalculateSumÆbler(List<Æbler> list)
+        //public static decimal CalculateSumÆbler(List<Æble> list)
         //{
         //    decimal sum = 0;
         //    foreach (var l in list)
@@ -33,7 +33,7 @@ namespace ÆblerPærerGenerics
         //    return sum;
         //}
 
-        //public static decimal CalculateSumPærer(List<Pærer> list)
+        //public static decimal CalculateSumPærer(List<Pære> list)
         //{
         //    decimal sum = 0;
         //    foreach (var l in list)
