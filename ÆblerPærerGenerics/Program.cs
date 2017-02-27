@@ -36,6 +36,18 @@ namespace ÆblerPærerGenerics
             Console.WriteLine("Så meget er pærerbeholdningen værd: " + værdiTotalPærer);
 
 
+
+
+            // EQUALS
+
+            var æble1 = new Æbler() { Navn = "Cox Orange", Lager = 22, Pris = 10.0M };
+            var æble2 = new Æbler() { Navn = "Cox Orange", Lager = 22, Pris = 10.0M };
+            Console.WriteLine("æble1 equals æble2: " + æble1.Equals(æble2));
+            Æbler æble3 = æble2;
+            Console.WriteLine("æble2 equals æble3: " + æble2.Equals(æble3));
+            var æble4 = new Æbler() { Navn = "Cox Orange", Lager = 1, Pris = 25.0M };
+            Console.WriteLine("æble1 equals æble4: " + æble1.Equals(æble4));
+
             Console.ReadLine();
         }
     }
