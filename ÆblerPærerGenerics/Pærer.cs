@@ -12,5 +12,14 @@ namespace ÆblerPærerGenerics
         public decimal Pris { get; set; }
         public decimal Lager { get; set; }
 
+
+    public override string ToString()
+    {
+        return "Navn: " + this.Navn + " Pris: " + this.Pris + " Lagerbeholdning: " + this.Lager;
     }
+
+
+    }
+
+   
 }
